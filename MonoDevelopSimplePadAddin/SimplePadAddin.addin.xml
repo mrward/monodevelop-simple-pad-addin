@@ -1,0 +1,30 @@
+﻿<Addin
+	name        = "Simple Pad Addin"
+	id          = "SimplePadAddin"
+	namespace   = "MonoDevelop"
+	author      = "Matt Ward"
+	copyright   = "MIT"
+	url         = ""
+	description = "Simple pad addin"
+	category    = "IDE extensions"
+	version     = "0.1">
+	
+	<Runtime>
+	</Runtime>
+
+	<Dependencies>
+		<Addin id="Core" version="5.0"/>
+		<Addin id="Ide" version="5.0"/>
+	</Dependencies>
+		
+	<Extension path="/MonoDevelop/Ide/Pads">
+		<Pad
+			id="SimplePad"
+			defaultLayout="*"
+			defaultPlacement="Center Bottom"
+			defaultStatus="AutoHide"
+			icon="md-console"
+			class="MonoDevelopSimplePadAddin.SimplePad"
+			_label="Simple pad addin" />
+	</Extension>
+</Addin>
